@@ -108,8 +108,8 @@ if __name__ == '__main__':
     raw_data_path = os.path.join(project_path, "train_imgs")
     pre_data_path = os.path.join(project_path, "pre_data")
 
-    pre_image_data_path = os.path.join(pre_data_path, "image")
-    pre_label_data_path = os.path.join(pre_data_path, "label")
+    pre_image_data_path = os.path.join(pre_data_path, "images")
+    pre_label_data_path = os.path.join(pre_data_path, "labels")
     pre_image_train_data_path = os.path.join(pre_image_data_path, "train")
     pre_image_val_data_path = os.path.join(pre_image_data_path, "val")
     pre_label_train_data_path = os.path.join(pre_label_data_path, "train")
