@@ -99,12 +99,11 @@ def create_dirs(dirs):
 
 
 if __name__ == '__main__':
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument('--json', type=str, default='./tile_round1_train_20201231/train_annos.json', help='initial weights path')
-    # parser.add_argument('--')
-    # opt = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--path', type=str, default='./', help='train data path')
+    opt = parser.parse_args()
 
-    project_path = "./tile_round1_train_20201231"
+    project_path = opt.path
     json_path = os.path.join(project_path, "train_annos.json")
     raw_data_path = os.path.join(project_path, "train_imgs")
     pre_data_path = os.path.join(project_path, "pre_data")
