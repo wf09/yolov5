@@ -82,9 +82,10 @@ def handle_data(file_path, list_json):
                 label_path = os.path.join(temp_label_path, str(step)) + '.txt'
                 with open(label_path, 'a') as f:
                     f.writelines(fstr)
+                print(f"Generating labels:{label_path}")
         image_path = os.path.join(temp_image_path, str(step)) + '.jpg'
         raw_image_path = os.path.join(file_path, list_dir)
-        print(f"Generating file:{image_path}")
+        print(f"Generating images:{image_path}")
         shutil.copyfile(raw_image_path, image_path)
 
 
